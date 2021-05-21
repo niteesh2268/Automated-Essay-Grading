@@ -1,9 +1,9 @@
 ﻿Team AI-Explorers:
 
-Gurudatta Patil 203050062
-Kunal Verma 203050121
-Mallela Niteesh Kumar Reddy 203050065
-Nilesh Kshirsagar 203059004
+Gurudatta Patil 203050062 <br />
+Kunal Verma 203050121 <br />
+Mallela Niteesh Kumar Reddy 203050065 <br />
+Nilesh Kshirsagar 203059004 <br />
 
 
 Requirements:
