@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block breadcrumb %}
+{% load static %}
+  <li class="breadcrumb-item active"><a href="{% url 'index' %}">Home</a></li>
+  <li class="breadcrumb-item active"><a href="{% url 'question' essay.question.set %}">Question {{ essay.question.set }}</a></li>
+  <li class="breadcrumb-item active">Essay</li>
+{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Grade {{ essay.score }}</h1>
+        <p class="lead">Maximum Possible Score on this question is {{ essay.question.max_score }}</p>
+        <hr class="my-4">
+        <p>Your essay has been graded</p>
+        <a class="btn btn-primary btn-lg" href="{% static "lime1.html" %}" role="button">Local Feature Importance</a>
+        <a class="btn btn-primary btn-lg" href="{% static "features.png" %}" role="button">Global Feature Importance</a>
+    </div>
+
+    <div class="container">
+            <h2 class="display-4">Your Submission</h2>
+            <p class="text-justify">{{ essay.content }}</p>
+            <!-- <img src="{% static "features.png" %}" alt="My image"> -->
+        </div>
+{% endblock %}
